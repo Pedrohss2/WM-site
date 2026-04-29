@@ -27,6 +27,13 @@ export const metadata: Metadata = {
     "manutenção de resistência elétrica",
     "resistências elétricas em Prado Ferreira",
     "WM Resistências",
+    "wm resistencia eletrica",
+    "wm resistencia",
+    "wm resistências",
+    "wmresistencias",
+    "WMResistencias",
+    "wmresistencias.com.br",
+    "wmresistencias.com.br",
   ],
 
   authors: [
