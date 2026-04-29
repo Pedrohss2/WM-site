@@ -10,13 +10,14 @@ import tubularCaracol from "@/assets/tubular-caracol.jpg";
 import coleira from "@/assets/coleira.jpg";
 import bainha from "@/assets/bainha.jpg";
 import ebulidor from "@/assets/ebulidor.jpg";
+import Image, { StaticImageData } from "next/image";
 import { CatalogDownload } from "./CatalogPDF";
 
 
 export type Product = {
   title: string;
   desc: string;
-  image: string | { src: string };
+  image: StaticImageData | string;
   tag: string;
 };
 
@@ -113,13 +114,22 @@ export const groups: { name: string; items: Product[] }[] = [
 function ProductCard({ p }: { p: Product }) {
   return (
     <article className="group relative overflow-hidden rounded-xl border border-border bg-card shadow-card transition-all duration-300 hover:-translate-y-1 hover:shadow-deep">
-      <div className="aspect-[4/3] overflow-hidden bg-secondary">
-        <img
-          src={typeof p.image === "string" ? p.image : p.image.src}
-          alt={p.title}
-          loading="lazy"
-          className="h-full w-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
-        />
+      <div className="relative aspect-[4/3] overflow-hidden bg-secondary">
+        {typeof p.image === "string" ? (
+          <img
+            src={p.image}
+            alt={p.title}
+            loading="lazy"
+            className="h-full w-full object-contain p-4 transition-transform duration-500 group-hover:scale-110"
+          />
+        ) : (
+          <Image
+            src={p.image}
+            alt={p.title}
+            fill
+            className="object-contain p-4 transition-transform duration-500 group-hover:scale-110"
+          />
+        )}
       </div>
       <div className="border-t border-border p-6">
         <span className="text-xs font-semibold uppercase tracking-[0.2em] text-ember">

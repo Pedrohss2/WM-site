@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { Flame, Menu, X } from "lucide-react";
+import Image from "next/image";
 import { InstagramIcon as Instagram } from "@/components/ui/icons";
 import { cn } from "@/lib/utils";
 import { CatalogDownload } from "./CatalogPDF";
@@ -37,8 +38,8 @@ export function Header() {
     >
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-4 md:px-8">
         <a href="#top" className="flex items-center gap-5 text-primary-foreground">
-          <img
-            src={logo.src}
+          <Image
+            src={logo}
             alt="WM Resistências Logo"
             className="h-14 w-14 rounded-xl object-cover shadow-md transition-transform hover:scale-105"
           />

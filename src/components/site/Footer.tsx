@@ -1,4 +1,5 @@
 import { Mail, MapPin, Phone } from "lucide-react";
+import Image from "next/image";
 import { InstagramIcon as Instagram } from "@/components/ui/icons";
 import logo from "@/assets/logo.jpeg";
 
@@ -9,8 +10,8 @@ export function Footer() {
         <div className="grid gap-12 md:grid-cols-4">
           <div className="md:col-span-2">
             <div className="flex items-center gap-3">
-              <img
-                src={logo.src}
+              <Image
+                src={logo}
                 alt="WM Resistências Logo"
                 className="h-14 w-14 rounded-lg object-cover shadow-lg"
               />

@@ -2,19 +2,98 @@ import type { Metadata } from "next";
 import "./globals.css";
 
 export const metadata: Metadata = {
-  title: "WM Resistências Elétricas | Resistências Industriais Sob Medida",
-  description: "Líder em resistências industriais em Prado Ferreira - PR. Fabricamos resistências cartucho, tubulares, coleiras e mais. Qualidade e durabilidade garantidas.",
-  keywords: "resistências elétricas, resistências industriais, WM Resistências, Prado Ferreira PR, aquecimento industrial, resistência cartucho, resistência tubular",
-  authors: [{ name: "WM Resistências Elétricas LTDA" }],
-  openGraph: {
-    title: "WM Resistências Elétricas | Qualidade Industrial",
-    description: "Especialistas em soluções de aquecimento industrial. Resistências sob medida com entrega em todo o estado.",
-    type: "website",
-    url: "https://wmresistencias.com.br",
-    images: ["/logo.jpeg"],
+  metadataBase: new URL("https://wmresistencias.com.br"),
+
+  title: {
+    default:
+      "Fabricante de Resistência Elétrica Industrial | WM Resistências",
+    template: "%s | WM Resistências",
   },
+
+  description:
+    "Fabricante de resistência elétrica industrial e resistência elétrica sob medida. Especialistas em aquecimento industrial, manutenção e soluções térmicas de alta performance para empresas de todo o Brasil. Solicite seu orçamento.",
+
+  keywords: [
+    "resistência elétrica industrial",
+    "fabricante de resistência elétrica",
+    "resistência elétrica sob medida",
+    "aquecimento industrial",
+    "resistência tubular",
+    "resistência cartucho",
+    "resistência coleira",
+    "resistência infravermelha",
+    "resistência mica",
+    "resistência flangeada",
+    "manutenção de resistência elétrica",
+    "resistências elétricas em Prado Ferreira",
+    "WM Resistências",
+  ],
+
+  authors: [
+    {
+      name: "WM Resistências Elétricas LTDA",
+      url: "https://wmresistencias.com.br",
+    },
+  ],
+
+  creator: "WM Resistências Elétricas LTDA",
+  publisher: "WM Resistências Elétricas LTDA",
+
+  alternates: {
+    canonical: "https://wmresistencias.com.br",
+  },
+
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      "max-image-preview": "large",
+      "max-snippet": -1,
+      "max-video-preview": -1,
+    },
+  },
+
+  openGraph: {
+    title:
+      "Fabricante de Resistência Elétrica Industrial | WM Resistências",
+
+    description:
+      "Especialistas em resistências elétricas industriais e soluções térmicas sob medida para sua empresa. Alta performance, durabilidade e atendimento em todo o Brasil.",
+
+    url: "https://wmresistencias.com.br",
+    siteName: "WM Resistências",
+    locale: "pt_BR",
+    type: "website",
+
+    images: [
+      {
+        url: "/logo.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "WM Resistências Elétricas",
+      },
+    ],
+  },
+
   twitter: {
     card: "summary_large_image",
+    title:
+      "Fabricante de Resistência Elétrica Industrial | WM Resistências",
+    description:
+      "Especialistas em resistência elétrica industrial e sob medida para empresas de todo o Brasil.",
+    images: ["/logo.jpeg"],
+  },
+
+  icons: {
+    icon: "/logo.jpeg",
+    shortcut: "/logo.jpeg",
+    apple: "/logo.jpeg",
+  },
+
+  verification: {
+    google: "",
   },
 };
 
@@ -27,7 +106,7 @@ export default function RootLayout({
     <html lang="pt-BR">
       <head>
         <meta name="theme-color" content="#E31E24" />
-        <link rel="icon" type="image/jpeg" href="/logo.jpeg" />
+
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{
@@ -38,6 +117,7 @@ export default function RootLayout({
               image: "https://wmresistencias.com.br/logo.jpeg",
               url: "https://wmresistencias.com.br",
               telephone: "+5543996600605",
+
               address: {
                 "@type": "PostalAddress",
                 streetAddress: "Rod. João Lunardelli, 1360-1448",
@@ -46,22 +126,44 @@ export default function RootLayout({
                 postalCode: "86618-000",
                 addressCountry: "BR",
               },
+
               geo: {
                 "@type": "GeoCoordinates",
                 latitude: -23.4457576,
                 longitude: -51.8037257,
               },
+
               openingHoursSpecification: {
                 "@type": "OpeningHoursSpecification",
-                dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                dayOfWeek: [
+                  "Monday",
+                  "Tuesday",
+                  "Wednesday",
+                  "Thursday",
+                  "Friday",
+                ],
                 opens: "08:00",
                 closes: "18:00",
               },
-              sameAs: ["https://instagram.com/wmresistencias"],
+
+              areaServed: "Brasil",
+
+              sameAs: [
+                "https://instagram.com/wmresistencias",
+              ],
+
+              makesOffer: {
+                "@type": "Offer",
+                itemOffered: {
+                  "@type": "Service",
+                  name: "Fabricação de Resistências Elétricas Industriais",
+                },
+              },
             }),
           }}
         />
       </head>
+
       <body>{children}</body>
     </html>
   );

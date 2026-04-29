@@ -1,4 +1,5 @@
 import { Cog, Flame, Sandwich, SprayCan, CircuitBoard } from "lucide-react";
+import Image from "next/image";
 import fogao from "@/assets/fogao.jpg";
 import fritadeira from "@/assets/fritadeira.jpg";
 import painel from "@/assets/painel-aberto.jpg";
@@ -55,12 +56,12 @@ export function Servicos() {
               className="group relative overflow-hidden rounded-xl border border-white/10 bg-white/5 backdrop-blur-sm transition-all hover:-translate-y-1 hover:border-ember/50 hover:bg-white/[0.08]"
             >
               {s.image && (
-                <div className="aspect-[16/10] overflow-hidden bg-black/20">
-                  <img
-                    src={typeof s.image === "string" ? s.image : s.image.src}
+                <div className="relative aspect-[16/10] overflow-hidden bg-black/20">
+                  <Image
+                    src={s.image}
                     alt={s.title}
-                    loading="lazy"
-                    className="h-full w-full object-cover opacity-80 transition-transform duration-500 group-hover:scale-110 group-hover:opacity-100"
+                    fill
+                    className="object-cover opacity-80 transition-transform duration-500 group-hover:scale-110 group-hover:opacity-100"
                   />
                 </div>
               )}

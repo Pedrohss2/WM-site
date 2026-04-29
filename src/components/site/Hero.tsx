@@ -1,4 +1,5 @@
 import { ArrowRight, MessageCircle, ShieldCheck, Wrench, Factory } from "lucide-react";
+import Image from "next/image";
 import heroImage from "@/assets/hero-industrial.jpg";
 
 export function Hero() {
@@ -9,12 +10,12 @@ export function Hero() {
     >
       {/* Background image */}
       <div className="absolute inset-0">
-        <img
-          src={heroImage.src}
+        <Image
+          src={heroImage}
           alt="Resistências elétricas industriais incandescentes em forno"
-          width={1920}
-          height={1080}
-          className="h-full w-full object-cover opacity-40"
+          fill
+          priority
+          className="object-cover opacity-40"
         />
         <div className="absolute inset-0 bg-gradient-to-r from-primary via-primary/85 to-primary/40" />
         <div className="absolute inset-0 bg-grid opacity-40" />
@@ -78,10 +79,11 @@ export function Hero() {
         <div className="relative hidden lg:col-span-5 lg:block">
           <div className="absolute -right-20 top-12 h-[520px] w-[520px] rounded-full bg-ember/20 blur-3xl" />
           <div className="relative ml-auto mt-8 aspect-[3/4] w-full max-w-md overflow-hidden rounded-2xl border border-white/10 shadow-deep animate-float">
-            <img
-              src={heroImage.src}
+            <Image
+              src={heroImage}
               alt="Forno industrial com resistências em operação"
-              className="h-full w-full object-cover"
+              fill
+              className="object-cover"
             />
             <div className="absolute inset-0 bg-gradient-to-t from-primary/80 via-transparent to-transparent" />
             <div className="absolute bottom-6 left-6 right-6">
