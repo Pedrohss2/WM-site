@@ -56,16 +56,11 @@ export function Sobre() {
                 <p className="font-display text-5xl text-ember">100%</p>
                 <p className="mt-1 text-sm uppercase tracking-wider opacity-80">Aço inox</p>
               </div>
-              <div className="rounded-xl border border-border bg-card p-6 shadow-card">
-                <p className="font-display text-5xl text-primary">3+</p>
-                <p className="mt-1 text-sm uppercase tracking-wider text-muted-foreground">
-                  Linhas de produto
-                </p>
-              </div>
+
               <div className="rounded-xl bg-secondary p-6 shadow-card">
-                <p className="font-display text-2xl text-primary">PR</p>
+                <p className="font-display text-2xl text-primary">BR</p>
                 <p className="mt-1 text-sm text-muted-foreground">
-                  Atendimento regional Paraná
+                  Sede no Paraná, com atendimento e envio para todo o Brasil.
                 </p>
               </div>
             </div>

@@ -13,7 +13,7 @@ export function Footer() {
               <Image
                 src={logo}
                 alt="WM Resistências Logo"
-                className="h-14 w-14 rounded-lg object-cover shadow-lg"
+                className="h-14 w-14 rounded-lg bg-white p-1 object-contain shadow-lg"
               />
 
               <span className="font-display text-xl">

@@ -6,7 +6,7 @@ export function Hero() {
   return (
     <section
       id="top"
-      className="relative min-h-screen overflow-hidden bg-hero-gradient pt-24 text-primary-foreground"
+      className="relative overflow-hidden bg-hero-gradient pt-24 text-primary-foreground"
     >
       {/* Background image */}
       <div className="absolute inset-0">
@@ -21,11 +21,11 @@ export function Hero() {
         <div className="absolute inset-0 bg-grid opacity-40" />
       </div>
 
-      <div className="relative mx-auto grid max-w-7xl gap-12 px-4 pb-24 pt-12 md:px-8 md:pt-20 lg:grid-cols-12 lg:gap-8">
+      <div className="relative mx-auto grid max-w-7xl gap-12 px-4 pb-12 pt-12 md:px-8 md:pb-16 md:pt-20 lg:grid-cols-12 lg:gap-8">
         <div className="lg:col-span-7 fade-up">
           <span className="inline-flex items-center gap-2 rounded-full border border-ember/40 bg-ember/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-ember">
             <span className="h-2 w-2 rounded-full bg-ember animate-pulse" />
-            Indústria · Prado Ferreira — PR
+            Indústria · Prado Ferreira-PR
           </span>
 
           <h1 className="mt-6 font-display text-5xl leading-[0.95] sm:text-6xl md:text-7xl lg:text-[5.5rem]">

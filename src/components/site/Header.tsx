@@ -41,7 +41,7 @@ export function Header() {
           <Image
             src={logo}
             alt="WM Resistências Logo"
-            className="h-14 w-14 rounded-xl object-cover shadow-md transition-transform hover:scale-105"
+            className="h-14 w-14 rounded-xl bg-white p-1 object-contain shadow-md transition-transform hover:scale-105"
           />
           <span className="font-display text-xl leading-tight tracking-wide md:text-2xl">
             WM <span className="text-ember">Resistências</span>
