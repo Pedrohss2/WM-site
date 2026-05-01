@@ -5,46 +5,29 @@ export const metadata: Metadata = {
   metadataBase: new URL("https://wmresistencias.com.br"),
 
   title: {
-    default:
-      "Fabricante de Resistência Elétrica Industrial | WM Resistências",
-    template: "%s | WM Resistências",
+    default: "WM Resistência Elétrica | Resistência Elétrica Industrial",
+    template: "%s | WM Resistência Elétrica",
   },
 
   description:
-    "Fabricante de resistência elétrica industrial e resistência elétrica sob medida. Especialistas em aquecimento industrial, manutenção e soluções térmicas de alta performance para empresas de todo o Brasil. Solicite seu orçamento.",
+    "Fabricante de resistência elétrica industrial sob medida. Alta performance e soluções térmicas de qualidade em Prado Ferreira e para todo o Brasil.",
 
   keywords: [
     "resistência elétrica industrial",
+    "resistência elétrica prado ferreira",
     "fabricante de resistência elétrica",
-    "resistência elétrica sob medida",
+    "resistência sob medida",
     "aquecimento industrial",
     "resistência tubular",
-    "resistência cartucho",
+    "resistência tipo cartucho",
     "resistência coleira",
-    "resistência infravermelha",
-    "resistência mica",
-    "resistência flangeada",
-    "manutenção de resistência elétrica",
-    "resistências elétricas em Prado Ferreira",
-    "WM Resistências",
-    "wm resistencia eletrica",
-    "wm resistencia",
-    "wm resistências",
-    "wmresistencias",
-    "WMResistencias",
-    "wmresistencias.com.br",
-    "wmresistencias.com.br",
+    "soluções térmicas industriais",
+    "WM Resistência Elétrica",
   ],
 
-  authors: [
-    {
-      name: "WM Resistências Elétricas LTDA",
-      url: "https://wmresistencias.com.br",
-    },
-  ],
-
-  creator: "WM Resistências Elétricas LTDA",
-  publisher: "WM Resistências Elétricas LTDA",
+  authors: [{ name: "WM Resistência Elétrica Ltda", url: "https://wmresistencias.com.br" }],
+  creator: "WM Resistência Elétrica Ltda",
+  publisher: "WM Resistência Elétrica Ltda",
 
   alternates: {
     canonical: "https://wmresistencias.com.br",
@@ -63,33 +46,28 @@ export const metadata: Metadata = {
   },
 
   openGraph: {
-    title:
-      "Fabricante de Resistência Elétrica Industrial | WM Resistências",
-
+    title: "WM Resistência Elétrica | Resistência Elétrica Industrial",
     description:
-      "Especialistas em resistências elétricas industriais e soluções térmicas sob medida para sua empresa. Alta performance, durabilidade e atendimento em todo o Brasil.",
-
+      "Fabricante de resistência elétrica industrial sob medida. Alta performance e soluções térmicas de qualidade em Prado Ferreira e para todo o Brasil.",
     url: "https://wmresistencias.com.br",
-    siteName: "WM Resistências",
+    siteName: "WM Resistência Elétrica Ltda",
     locale: "pt_BR",
     type: "website",
-
     images: [
       {
         url: "/logo.jpeg",
         width: 1200,
         height: 630,
-        alt: "WM Resistências Elétricas",
+        alt: "WM Resistência Elétrica - Resistência Elétrica Industrial",
       },
     ],
   },
 
   twitter: {
     card: "summary_large_image",
-    title:
-      "Fabricante de Resistência Elétrica Industrial | WM Resistências",
+    title: "WM Resistência Elétrica | Resistência Elétrica Industrial",
     description:
-      "Especialistas em resistência elétrica industrial e sob medida para empresas de todo o Brasil.",
+      "Fabricante de resistência elétrica industrial sob medida. Alta performance em Prado Ferreira e todo o Brasil.",
     images: ["/logo.jpeg"],
   },
 
@@ -100,7 +78,7 @@ export const metadata: Metadata = {
   },
 
   verification: {
-    google: "",
+    google: "P3rHrLsTvTNqvfSxBQPnd6_YRCYiSBcWAzhi5p9D84E",
   },
 };
 
@@ -120,7 +98,7 @@ export default function RootLayout({
             __html: JSON.stringify({
               "@context": "https://schema.org",
               "@type": "LocalBusiness",
-              name: "WM Resistências Elétricas LTDA",
+              name: "WM Resistência Elétrica Ltda",
               image: "https://wmresistencias.com.br/logo.jpeg",
               url: "https://wmresistencias.com.br",
               telephone: "+5543996600605",
