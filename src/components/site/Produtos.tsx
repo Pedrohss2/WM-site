@@ -114,7 +114,7 @@ export const groups: { name: string; items: Product[] }[] = [
       },
 
       {
-        title: "Coleire circular",
+        title: "Coleira circular",
         desc: "Coleiras para extrusoras e tubos feitas em papel de mica ou em cerâmica, podendo atingir mais que o dobro da potência e durabilidade de uma de mica.",
         image: coleiraCircular,
         tag: "Utilitário",
